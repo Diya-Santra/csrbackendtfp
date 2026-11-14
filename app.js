@@ -10,6 +10,9 @@ const client = require("prom-client");
 
 const { db, getPool } = require("./config/db");
 
+// Routes
+const authRoutes = require("./routes/auth");
+
 const app = express();
 
 /* ===================== LOGGER ===================== */
@@ -131,6 +134,8 @@ app.use((req, res, next) => {
 });
 
 /* ===================== ROUTES ===================== */
+
+app.use("/api/auth", authRoutes);
 
 app.get("/health", async (req, res) => {
   try {
