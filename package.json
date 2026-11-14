@@ -1,0 +1,8 @@
+{
+  "name": "csrbackendtfp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Diya-Santra/csrbackendtfp.git",
+  "author": "Diya Santra <santradiya13@gmail.com>",
+  "license": "MIT"
+}
